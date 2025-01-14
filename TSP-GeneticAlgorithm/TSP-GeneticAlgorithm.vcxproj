@@ -127,7 +127,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataManagement\FileReader.cpp" />
+    <ClCompile Include="DataManagement\RandomIntegerGenerator.cpp" />
+    <ClCompile Include="GeneticAlgorithm\GeneticAlgorithm.cpp" />
+    <ClCompile Include="NearestNeighbor\NearestNeighbor.cpp" />
+    <ClCompile Include="Path\PathSorter.cpp" />
+    <ClCompile Include="Path\RandomPathGenerator.cpp" />
     <ClCompile Include="TSP-GeneticAlgorithm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataManagement\ConfigurationData.h" />
+    <ClInclude Include="DataManagement\FileReader.h" />
+    <ClInclude Include="DataManagement\InputData.h" />
+    <ClInclude Include="DataManagement\RandomIntegerGenerator.h" />
+    <ClInclude Include="GeneticAlgorithm\GeneticAlgorithm.h" />
+    <ClInclude Include="NearestNeighbor\NearestNeighbor.h" />
+    <ClInclude Include="Path\PathSorter.h" />
+    <ClInclude Include="Path\Path.h" />
+    <ClInclude Include="Path\RandomPathGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="configuration_file.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ftv170.atsp" />
+    <None Include="ftv47.atsp" />
+    <None Include="rbg403.atsp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

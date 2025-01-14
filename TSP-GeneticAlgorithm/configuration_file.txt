@@ -1,0 +1,7 @@
+filename:ftv170.atsp
+stopAfterNSeconds:60
+outputFilename:wyniki.csv
+populationSize:1000
+crossoverRate:0.8
+mutationRate:0.01
+numberOfMeasurements:1

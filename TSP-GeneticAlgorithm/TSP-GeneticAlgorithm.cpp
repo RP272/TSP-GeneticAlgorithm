@@ -2,10 +2,19 @@
 //
 
 #include <iostream>
+#include "GeneticAlgorithm/GeneticAlgorithm.h"
+#include "DataManagement/FileReader.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
+    // Wczytaj dane z pliku konfiguracyjnego.
+    ConfigurationData config = FileReader::readConfigurationDataFile();
+
+    // Wczytaj dane wejsciowe na podstawie sciezki podanej w pliku konfiguracyjnym.
+    InputData inputData = FileReader::readInputDataFile(config);
+
+    GeneticAlgorithm::run(config, inputData);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
